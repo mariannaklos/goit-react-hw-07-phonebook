@@ -1,16 +1,17 @@
+import { ListContact } from './ListContacts/ListContacts';
+import { Layout } from './Layout/Layout.styled';
+import { ContactForm } from './FormsAdd/FormsAdd';
+import { Title } from './App.styled';
+import { Filter } from './FilterContacts/FilterContacts';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Layout>
+      <Title>Phonebook</Title>
+      <ContactForm></ContactForm>
+      <Title>Contacts</Title>
+      <Filter />
+      <ListContact />
+    </Layout>
   );
 };
